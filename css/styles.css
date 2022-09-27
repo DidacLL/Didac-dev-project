@@ -11,6 +11,9 @@ body{
     overflow-wrap: anywhere;
     overflow-block: auto;
 }
+button{
+    display: flex;
+}
 #dp-console{
     margin-bottom: 15%;
     padding: 1rem 1rem 1rem 1rem;
