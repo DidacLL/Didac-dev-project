@@ -27,9 +27,18 @@
 
         <div id="dp-header">
 
-            <h1> Didac Llorens</h1>
-            <h3> Software engineer and creative developer.</h3>
-            <div id="dp-resume">
+            <h1> Didac Llorens(){</h1>
+            <button class="btn collapsed text-white"
+                    id="dp-main-resume-btn"
+                    data-toggle="collapse"
+                    data-target="#dp-resume"
+                    aria-expanded="true"
+                    aria-controls="dp-resume">
+                <p class="dp-console-title">
+                <h3> Software engineer and creative developer.</h3>
+                </p>
+            </button>
+            <div id="dp-resume" class="collapse show" aria-labelledby="dp-main-resume-btn">
                 <ul id="dp-resume-list">
                     <li id="dp-resume-list-main">BackEnd Java Developer licensed by IronHack Barcelona,</li>
                     <li>Currently studying Software Engineering Degree at UOC University (Barcelona),</li>
@@ -43,15 +52,13 @@
 
             <div class="card flex-column w-100">
                 <div class="card-header w-100" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn collapsed text-white"
-                                data-toggle="collapse"
-                                data-target="#collapseOne"
-                                aria-expanded="false"
-                                aria-controls="collapseOne">
-                            <p class="dp-console-title">education[]{</p>
-                        </button>
-                    </h5>
+                    <button class="btn collapsed text-white"
+                            data-toggle="collapse"
+                            data-target="#collapseOne"
+                            aria-expanded="false"
+                            aria-controls="collapseOne">
+                        <h4 class="mb-0 dp-console-title">education[]{ </h4>
+                    </button>
                 </div>
 
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
@@ -63,22 +70,20 @@
                                 <li>2021 UOC: Taller de Java Para Iniciados en programación,</li>
                                 <li>2016 escola Massana: Tecnico Superior en Artes Plasticas, Diseño e Ilustración</li>
                             </ul>
-                            <p class="dp-console">};</p>
+                            <h4 class="dp-console">};</h4>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header w-100" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn collapsed text-white"
-                                data-toggle="collapse"
-                                data-target="#collapseTwo"
-                                aria-expanded="false"
-                                aria-controls="collapseTwo">
-                            <p class="dp-console-title">skills[]{</p>
-                        </button>
-                    </h5>
+                    <button class="btn collapsed text-white"
+                            data-toggle="collapse"
+                            data-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo">
+                        <h4 class="mb-0 dp-console-title">skills[]{ </h4>
+                    </button>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
                     <div class="card-body w-100">
@@ -94,25 +99,23 @@
                                 <li>Postman, IntelliJ, Eclipse, Workbench,</li>
                                 <li>Agile workflow, UML</li>
                             </ul>
-                            <p class="dp-console">};</p>
+                            <h4 class="dp-console">};</h4>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <h5 class="dp-tag">@Deprecated</h5>
             <div class="card">
                 <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree">
+                    <button class="btn collapsed text-white" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
 
-                            <p class="dp-tag">@Deprecated</p>
-                            <p class="dp-console-title">previousExperience[]{</p>
-                        </button>
-                    </h5>
+                        <h4 class="mb-0 dp-console-title">previousExperience[]{ </h4>
+                    </button>
                 </div>
 
 
-                <p class="dp-console">};</p>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
                     <div class="card-body">
 
@@ -123,45 +126,29 @@
                                 </li>
 
                             </ul>
+                            <h4>};</h4>
                         </div>
                     </div>
                 </div>
+
+                <p class="dp-console">
+                <h1>};</h1></p>
             </div>
         </div>
-        <!--    <div id="dp-education">-->
-        <!--        <p class="dp-console-title">education[]{</p>-->
-        <!--        <ul class="dp-console-list">-->
-        <!--            <li>Current: UOC Software Engineering Degree ,</li>-->
-        <!--            <li>2022 IronHack Barcelona: Java BackEnd Bootcamp,</li>-->
-        <!--            <li>2021 UOC: Taller de Java Para Iniciados en programación,</li>-->
-        <!--            <li>2016 escola Massana: Tecnico Superior en Artes Plasticas, Diseño e Ilustración</li>-->
-        <!--        </ul>-->
-        <!--        <p class="dp-console">};</p>-->
-        <!--    </div>-->
-        <!--    <div id="dp-skills">-->
-        <!--        <p class="dp-console-title">skills[]{</p>-->
-        <!--        <ul class="dp-console-list">-->
-        <!--            <li>Java 18 Advanced level: Spring, REST api, WebFlux MicroServices, maven, security (OAuth2, keycloak),-->
-        <!--                libGDX...-->
-        <!--            </li>-->
-        <!--            <li>JavaScript, CSS, Html5,</li>-->
-        <!--            <li>C language,</li>-->
-        <!--            <li>MySQL,</li>-->
-        <!--            <li>Postman, IntelliJ, Eclipse, Workbench,</li>-->
-        <!--            <li>Agile workflow, UML</li>-->
-        <!--        </ul>-->
-        <!--        <p class="dp-console">};</p>-->
-        <!--    </div>-->
-
-
     </div>
     <div id="dp-paper" class="text-monospace">
 
         <h2 id="dp-paper-title"> $HELLO WORLD_ </h2>
         <p id="dp-paper-subtitle">Barcelona, 2022</p>
         <div id="dp-paper-resume">
-            <p class="dp-paper-section">Resume:</p>
-            <ul class="dp-paper-list">
+            <button class="btn collapsed "
+                    data-toggle="collapse"
+                    data-target="#dp-paper-resume-list"
+                    aria-expanded="false"
+                    aria-controls="dp-paper-resume-list">
+                <h4 class="dp-paper-section">Resume:</h4>
+            </button>
+            <ul class="collapse show dp-paper-list" id="dp-paper-resume-list">
                 <li>I’m a 90s younger,professional visual Artist who started coding during the lockdown in 2020.
                     And surprisingly discovered a new passion in IT!
                 </li>
@@ -175,8 +162,14 @@
             </ul>
         </div>
         <div id="dp-paper-art">
-            <p class="dp-paper-section">Art Skills:</p>
-            <ul class="dp-paper-list">
+            <button class="btn collapsed "
+                    data-toggle="collapse"
+                    data-target="#dp-paper-art-list"
+                    aria-expanded="false"
+                    aria-controls="dp-paper-art-list">
+                <h4 class="dp-paper-section">Art Skills:</h4>
+            </button>
+            <ul class="dp-paper-list collapse" , id="dp-paper-art-list">
                 <li>Post-expressionism: Charcoal, watercolor, ink & acrylic</li>
                 <li>Digital painting & Graphic Design: Adobe Photoshop, Illustrator, InDesign, Gimp</li>
                 <li>Animation: Love CutOut classic animation, also Adobe AfterEfects, Premier & Illustrator</li>
@@ -184,8 +177,14 @@
             </ul>
         </div>
         <div id="dp-paper-soft">
-            <p class="dp-paper-section">Soft Skills:</p>
-            <ul class="dp-paper-list">
+            <button class="btn collapsed "
+                    data-toggle="collapse"
+                    data-target="#dp-paper-soft-list"
+                    aria-expanded="false"
+                    aria-controls="dp-paper-soft-list">
+                <h4 class="dp-paper-section">Soft Skills:</h4>
+            </button>
+            <ul class="dp-paper-list" id="dp-paper-soft-list">
                 <li>Open to new challenges</li>
                 <li>Facility (and passion) to learn new environments.</li>
                 <li>Naturally creative and divergent mind.</li>

@@ -1,10 +1,5 @@
 body{
     min-height: 100%;
-
-    /*background: black!important;*/
-    /*color: white !important;*/
-
-
 }
 #dp-body{
     height: 80% !important;
@@ -22,11 +17,6 @@ body{
     background: black!important;
     color: white !important;
     width: min(max(max(100% - 30rem, 30rem),min(100%,60rem)),(100%- 30rem)*2) ;
-    /*width: clamp(60rem,30rem,100%)!important;*/
-    /*width: min(min(100%,60rem), 30rem);*/
-    /*min-width: 30rem !important;*/
-
-    /*max-width: 100% !important;*/
     border-bottom-right-radius: 2rem;
 }
 #dp-paper{
@@ -37,11 +27,9 @@ body{
     text-align: justify-all !important;
     background: white!important;
     color: black !important;
-    /*text-wrap: normal!important;*/
     min-width: 30rem !important;
     max-width: 50% !important;
     border-radius: 0.5rem;
-    /*max-width: 10rem !important;*/
 }
 #dp-me{
     position: fixed;
@@ -70,18 +58,12 @@ body{
     bottom: 0;
     width: 100%;
     background: white!important;
-    /*background-size: 200%;*/
     color: black !important;
-    /*min-width: 15rem !important;*/
-    /*max-width: 20% !important;*/
     fill: white;
 }
-#dp-contact{
-
+#dp-contact {
     width: 70%;
-
     border-radius: 0.5rem;
-
 }
 
 #accordion,.card{
