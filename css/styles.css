@@ -21,11 +21,17 @@ body{
     padding: 1rem 1rem 1rem 1rem;
     background: black!important;
     color: white !important;
-    min-width: 30rem !important;
-    max-width: 50% !important;
+    width: min(max(max(100% - 30rem, 30rem),min(100%,60rem)),(100%- 30rem)*2) ;
+    /*width: clamp(60rem,30rem,100%)!important;*/
+    /*width: min(min(100%,60rem), 30rem);*/
+    /*min-width: 30rem !important;*/
+
+    /*max-width: 100% !important;*/
     border-bottom-right-radius: 2rem;
 }
 #dp-paper{
+
+    width: max(30rem,min(100%,30rem*2));
     margin-bottom: 20%;
     padding: 2rem 2rem 10rem;
     text-align: justify-all !important;
@@ -44,9 +50,6 @@ body{
     max-width: 50%;
     min-width: 20%;
     right: 0;
-    /*margin-top: -100%;*/
-    margin-bottom: auto;
-    /*overflow-y: visible;*/
 }
 #dp-me>img{
     width: auto;
