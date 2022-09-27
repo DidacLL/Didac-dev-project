@@ -27,7 +27,10 @@ body{
 }
 #dp-paper{
     margin-bottom: 20%;
-    padding: 2rem 2rem 2rem 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 10rem;
     text-align: justify-all !important;
     background: white!important;
     color: black !important;
