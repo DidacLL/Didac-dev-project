@@ -15,8 +15,8 @@ button{
     display: flex;
 }
 #dp-console{
-    margin-bottom: 15%;
-    padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 1%;
+    padding: 2rem 2rem 2rem 2rem;
     background: black!important;
     color: white !important;
     width: min(max(max(100% - 30rem, 30rem),min(100%,60rem)),(100%- 30rem)*2) ;
@@ -25,8 +25,7 @@ button{
 #dp-paper{
 
     width: max(30rem,min(100%,30rem*2));
-    margin-bottom: 20%;
-    padding: 2rem 2rem 10rem;
+    padding: 2rem 2rem 2rem;
     text-align: justify-all !important;
     background: white!important;
     color: black !important;
@@ -76,4 +75,11 @@ button{
     color: white !important;
 }
 .card-body{
+}
+#dp-skills-bar>img{
+    width: 3rem;
+}
+#dp-skills-bar{
+    padding: 2rem 2rem 5rem;
+    margin-bottom: 15%;
 }
