@@ -50,11 +50,15 @@ body{
     right: 0;
     /*margin-top: -100%;*/
     margin-bottom: auto;
-    overflow-y: visible;
+    /*overflow-y: visible;*/
+}
+#dp-me>img{
+    width: auto;
+    height: auto;
 }
 #dp-photo{
-    max-width: 30%;
-    min-width: 10%;
+    max-height: 80%;
+    min-height: 30%;
     width: auto;
     height: 50%;
     /*margin-bottom: 100%;*/
