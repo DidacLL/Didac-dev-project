@@ -248,9 +248,12 @@
 </div>
 
 <div id="dp-photo" >
-    <img id="dp-memin" src="images/memin.png" alt="Photo of Me" class="img-fluid" onclick="this.style.opacity=
-    this.style.opacity==='100'?'0':'100'">
-    <img id="dp-me" src="images/me.png" alt="Photo of Me" class="img-fluid" onclick="this.style.opacity=
+    <img  id="dp-memin" src="images/memin.png" alt="Photo of Me" class="img-fluid collapsed"
+          data-toggle="collapse"
+          data-target="#dp-me"
+          aria-expanded="true"
+          aria-controls="dp-me">
+    <img id="dp-me" src="images/me.png" alt="Photo of Me" class="img-fluid collapse show" onclick="this.style.opacity=
     this.style.opacity==='100'?'0':'100'">
 
 </div>
