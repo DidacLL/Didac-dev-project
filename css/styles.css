@@ -27,8 +27,7 @@ button{
     color: white !important;
     min-width: 30rem!important;
     max-width: 100%!important;
-    /*max-width: 60rem;*/
-    /*,(100%- 30rem)*2) ;*/
+    border-bottom-right-radius: 2rem;
 
 }
 #dp-paper{
