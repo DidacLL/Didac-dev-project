@@ -1,10 +1,11 @@
 body{
     min-height: 100%;
+    display: inline-block;
 }
 #dp-body{
     height: 80% !important;
     display: flex;
-    /*direction: unset;*/
+    direction: initial;
     flex-wrap: wrap;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -19,12 +20,13 @@ button{
     padding: 2rem 2rem 2rem 2rem;
     background: black!important;
     color: white !important;
-    width: min(max(max(100% - 30rem, 30rem),min(100%,60rem)),(100%- 30rem)*2) ;
+    width: max(max(100% - 30rem, 30rem),max(100% - 60rem,30rem));
+    /*,(100%- 30rem)*2) ;*/
     border-bottom-right-radius: 2rem;
 }
 #dp-paper{
 
-    width: max(30rem,min(100%,30rem*2));
+    width: max(max(100% - 30rem, 30rem),max(100% - 60rem,30rem));
     padding: 2rem 2rem 2rem;
     text-align: justify-all !important;
     background: white!important;
