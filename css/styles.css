@@ -3,29 +3,38 @@ body{
     display: inline-block;
 }
 #dp-body{
+    overflow: hidden;
     height: 80% !important;
     display: flex;
     direction: initial;
     flex-wrap: wrap;
-    overflow-y: scroll;
     overflow-x: hidden;
     overflow-wrap: anywhere;
-    overflow-block: auto;
+    /*overflow-block: auto;*/
+    width: 100%;
+
+    /*border: red solid 2px;*/
 }
 button{
     display: flex;
 }
 #dp-console{
+
+    /*border: deeppink solid 2px;*/
     margin-bottom: 1%;
     padding: 2rem 2rem 2rem 2rem;
     background: black!important;
     color: white !important;
-    width: max(max(100% - 30rem, 30rem),max(100% - 60rem,30rem));
+    min-width: 30rem!important;
+    max-width: 100%!important;
+    /*max-width: 60rem;*/
     /*,(100%- 30rem)*2) ;*/
-    border-bottom-right-radius: 2rem;
+
 }
 #dp-paper{
 
+    /*border: red solid 2px;*/
+    overflow: hidden;
     width: max(max(100% - 30rem, 30rem),max(100% - 60rem,30rem));
     padding: 2rem 2rem 2rem;
     text-align: justify-all !important;
@@ -77,6 +86,7 @@ button{
     color: white !important;
 }
 .card-body{
+    width: 100%;
 }
 #dp-skills-bar>img{
     width: 3rem;
