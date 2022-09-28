@@ -4,9 +4,8 @@ window.onresize=function (){
     clearTimeout(resizeTimer);
     resizeTimer=setTimeout(function (){resizeBody()},100);
 }
-window.onload=function (){
-    resizeBody();
-}
+document.onload=  resizeBody();
+
 function resizeBody() {
     let consolePanel= document.getElementById('dp-console'); 
     let num = calcREM(document.body.getBoundingClientRect().width/2);
