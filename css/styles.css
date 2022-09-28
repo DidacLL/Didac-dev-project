@@ -43,15 +43,8 @@ button{
     max-width: 50% !important;
     border-radius: 0.5rem;
 }
-#dp-me{
-    position: fixed;
-    bottom: 0;
-    max-height: 80%;
-    max-width: 50%;
-    min-width: 20%;
-    right: 0;
-}
-#dp-me>img{
+
+#dp-me>img,#dp-memin>img{
     width: auto;
     height: auto;
 }
@@ -62,6 +55,14 @@ button{
     height: 50%;
     /*margin-bottom: 100%;*/
 }
+#dp-me,#dp-memin{
+     position: fixed;
+     bottom: 0;
+     max-height: 80%;
+     max-width: 50%;
+     min-width: 20%;
+     right: 0;
+ }
 #dp-footer{
     box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
