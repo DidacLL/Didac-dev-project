@@ -4,7 +4,7 @@ window.onresize=function (){
     clearTimeout(resizeTimer);
     resizeTimer=setTimeout(function (){resizeBody()},100);
 }
-document.onload=  resizeBody();
+window.addEventListener("load",resizeBody);
 
 function resizeBody() {
     let consolePanel= document.getElementById('dp-console'); 
