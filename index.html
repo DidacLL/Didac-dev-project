@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dídac CV</title>
     <!-- Bootstrap CSS -->
-    <meta name="viewport" content="width=device-width, scale=1">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -32,7 +32,7 @@
                 aria-expanded="true"
                 aria-controls="dp-console-main">
             <p>
-            <h1>Didac Llorens(){ </h1></p>
+            <h1><span class="dp-code-title">Didac Llorens</span>(){ </h1></p>
         </button>
         <div id="dp-console-main" class="collapse show">
             <div id="dp-header">
@@ -43,16 +43,16 @@
                         data-target="#dp-resume"
                         aria-expanded="true"
                         aria-controls="dp-resume">
-                    <p class="dp-console-title">
-                    <h3> Software engineer and creative developer.</h3>
-                    </p>
+                     <h5  class="dp-console-title" style="color: #53c87b "> Software engineer and creative developer.</h5>
                 </button>
                 <div id="dp-resume" class="collapse show" aria-labelledby="dp-main-resume-btn">
                     <ul id="dp-resume-list">
-                        <li id="dp-resume-list-main">BackEnd Java Developer licensed by IronHack Barcelona,</li>
-                        <li>Currently studying Software Engineering Degree at UOC University (Barcelona),</li>
-                        <li>ReSkilled professional, love to keep always learning, out of the comfort zone,</li>
-                        <li>Open to new opportunities to point my career plan to the right direction! ;</li>
+                        <li id="dp-resume-list-main">BackEnd Java Developer licensed by
+                            <a href="https://www.ironhack.com/es/barcelona">IronHack Barcelona</a><span class="dp-code-orange">,</span></li>
+                        <li>Currently studying Software Engineering Degree at <a href="https://www.uoc.edu" >
+                            UOC University (Barcelona)</a><span class="dp-code-orange">,</span></li>
+                        <li>ReSkilled professional, love to keep always learning, out of the comfort zone<span class="dp-code-orange">,</span></li>
+                        <li>Open to new opportunities to point my career plan to the right direction!<span class="dp-code-orange"> ;</span></li>
                     </ul>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                                 data-target="#collapseOne"
                                 aria-expanded="false"
                                 aria-controls="collapseOne">
-                            <h4 class="mb-0 dp-console-title">education[ ]{ </h4>
+                            <h5 class="mb-0 dp-console-title"><span class="dp-code-title"> education</span>[ ]{ </h5>
                         </button>
                     </div>
 
@@ -74,14 +74,14 @@
                         <div class="card-body">
                             <div id="dp-education">
                                 <ul class="dp-console-list">
-                                    <li>Current: UOC Software Engineering Degree ,</li>
-                                    <li>2022 IronHack Barcelona: Java BackEnd Bootcamp,</li>
-                                    <li>2021 UOC: Taller de Java Para Iniciados en programación,</li>
-                                    <li>2016 escola Massana: Tecnico Superior en Artes Plasticas, Diseño e Ilustración
+                                    <li><span class="dp-tag"> Current:</span> UOC Software Engineering Degree<span class="dp-code-orange"> ,</span></li>
+                                    <li><span class="dp-tag">2022 IronHack Barcelona:</span> Java BackEnd Bootcamp<span class="dp-code-orange"> ,</span></li>
+                                    <li><span class="dp-tag">2021 UOC:</span> Taller de Java Para Iniciados en programación<span class="dp-code-orange"> ,</span></li>
+                                    <li><span class="dp-tag">2016 escola Massana:</span> Tecnico Superior en Artes Plasticas, Diseño e Ilustración
                                     </li>
                                 </ul>
                             </div>
-                            <h4 class="dp-console">};</h4>
+                            <h5 class="dp-console">}<span class="dp-code-orange"> ;</span></h5>
                         </div>
                     </div>
                 </div>
@@ -92,24 +92,23 @@
                                 data-target="#collapseTwo"
                                 aria-expanded="false"
                                 aria-controls="collapseTwo">
-                            <h4 class="mb-0 dp-console-title">skills[ ]{ </h4>
+                            <h5 class="mb-0 dp-console-title"><span class="dp-code-title"> skills</span>[ ]{ </h5>
                         </button>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
                         <div class="card-body w-100">
                             <div id="dp-skills">
                                 <ul class="dp-console-list">
-                                    <li>Java 18 Advanced level: Spring, REST api, WebFlux MicroServices, maven, security
-                                        (OAuth2, keycloak),
-                                        libGDX...
+                                    <li><span class="dp-keyword"> Java 18</span> Advanced level: Spring, REST api, WebFlux MicroServices, maven, security
+                                        (OAuth2, keycloak),libGDX...<span class="dp-code-orange"> ,</span>
                                     </li>
-                                    <li>JavaScript, CSS, Html5,</li>
-                                    <li>C language,</li>
-                                    <li>MySQL,</li>
-                                    <li>Postman, IntelliJ, Eclipse, Workbench,</li>
-                                    <li>Agile workflow, UML</li>
+                                    <li class="dp-keyword">JavaScript, CSS, Html5<span class="dp-code-orange"> ,</span></li>
+                                    <li class="dp-keyword">C language<span class="dp-code-orange"> ,</span></li>
+                                    <li class="dp-keyword">MySQL<span class="dp-code-orange"> ,</span></li>
+                                    <li class="dp-keyword">Postman, IntelliJ, Eclipse, Workbench<span class="dp-code-orange"> ,</span></li>
+                                    <li>Agile workflow, <span class="dp-keyword">UML</span></li>
                                 </ul>
-                                <h4 class="dp-console">};</h4>
+                                <h5 class="dp-console">}<span class="dp-code-orange"> ;</span></h5>
                             </div>
                         </div>
                     </div>
@@ -121,7 +120,7 @@
                         <button class="btn collapsed text-white" data-toggle="collapse" data-target="#collapseThree"
                                 aria-expanded="false" aria-controls="collapseThree">
 
-                            <h5 class="mb-0 dp-console-title">previousExperience[ ]{ </h5>
+                            <h5 class="mb-0 "><span class="dp-code-title"> previousExperience</span>[ ]{ </h5>
                         </button>
                     </div>
 
@@ -131,12 +130,12 @@
 
                             <div id="dp-previous">
                                 <ul class="dp-console-list">
-                                    <li>+10 years of experience working on customer service and helpdesk for Spain's
+                                    <li style="color: cadetblue">+10 years of experience working on customer service and helpdesk for Spain's
                                         most important companies (Caixabank, Movistar or Vodafone)
                                     </li>
 
                                 </ul>
-                                <h4>};</h4>
+                                <h4>}<span class="dp-code-orange"> ;</span></h4>
                             </div>
                         </div>
                     </div>
@@ -145,7 +144,7 @@
             </div>
         </div>
         <p class="dp-console">
-        <h1>};</h1></p>
+        <h1>}</h1></p>
     </div>
     <div id="dp-paper" class="text-monospace">
         <button class="btn collapsed "

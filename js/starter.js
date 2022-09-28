@@ -1,6 +1,7 @@
 
 let resizeTimer;
 window.onresize=function (){
+    visualViewport.scale=0;
     clearTimeout(resizeTimer);
     resizeTimer=setTimeout(function (){resizeBody()},100);
 }

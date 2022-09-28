@@ -1,6 +1,7 @@
 body{
     min-height: 100%;
     display: inline-block;
+
 }
 #dp-body{
     overflow: hidden;
@@ -48,12 +49,26 @@ button{
     width: auto;
     height: auto;
 }
+a,.dp-keyword{
+    color: #9c31ff;
+}
 #dp-photo{
     max-height: 80%;
     min-height: 30%;
     width: auto;
     height: 50%;
     /*margin-bottom: 100%;*/
+}
+.dp-code-orange{
+    color: darkorange;
+    font-weight: bold;
+}
+.dp-code-title{
+    color: #ffd23e;
+}
+.dp-tag{
+    color: lawngreen;
+    font-style: italic;
 }
 #dp-me,#dp-memin{
      position: fixed;
