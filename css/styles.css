@@ -91,16 +91,20 @@ a, .dp-keyword {
 }
 
 #dp-contact {
-    padding-left: 2rem;
+    padding-left: 2%;
     padding-top: 1rem;
-    width: calc(100% - 20rem);
+    width: max(calc(100% - 20rem),15rem);
     border-radius: 0.5rem;
-    alignment: center;
-    overflow: visible;
+    display: inline-block;
+
+    border: red solid 1px;
+
 }
 #dp-contact>span>a>img{
     max-height:50% ;
-    max-width:33%
+    min-height: 10%;
+    /*width: auto;*/
+    /*max-width:33%;*/
 }
 #dp-contact>span>a>img:hover{
     transform: rotate(30deg);
