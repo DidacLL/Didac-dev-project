@@ -82,7 +82,7 @@ a, .dp-keyword {
     display: flex;
     position: fixed;
     min-height: 7rem;
-    max-height: min(15%,14rem);
+    max-height: min(15%,12rem);
     width: 100%;
     bottom: -10px;
     background: white !important;
