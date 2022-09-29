@@ -107,8 +107,28 @@ a, .dp-keyword {
 }
 
 #dp-contact {
-    width: 70%;
+
+    padding-left: 2rem;
+    padding-top: 1rem;
+    width: fit-content;
     border-radius: 0.5rem;
+    alignment: center;
+}
+#dp-contact>span>a>img{
+    height: 50%;
+    /*padding-left: 5%;*/
+}
+#dp-contact>span>a>img:hover{
+    transform: rotate(30deg);
+    /*padding-left: 5%;*/
+}
+#dp-contact>span>a>img:active{
+    transform: rotate(150deg);
+    /*padding-left: 5%;*/
+}
+#dp-contact>span{
+    padding-left: 2rem;
+    padding-top: 1rem;
 }
 
 .dp-closing, .btn {
