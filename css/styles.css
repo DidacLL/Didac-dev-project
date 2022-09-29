@@ -82,7 +82,7 @@ a, .dp-keyword {
     display: flex;
     position: fixed;
     min-height: 7rem;
-    max-height: 15%;
+    max-height: min(15%,14rem);
     width: 100%;
     bottom: -10px;
     background: white !important;
@@ -107,10 +107,7 @@ a, .dp-keyword {
     /*max-width:33%;*/
 }
 #dp-contact>span>a>img:hover{
-    transform: rotate(30deg);
-}
-#dp-contact>span>a>img:active{
-    transform: rotate(150deg);
+    animation: rotate 3s linear infinite;
 }
 #dp-contact>span{
     padding-left: 2rem;
@@ -171,4 +168,14 @@ a, .dp-keyword {
     to {
         transform: translateX(calc(-100% - var(--gap)));
     }
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
 }
