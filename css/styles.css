@@ -93,7 +93,9 @@ a,.dp-keyword{
     width: 70%;
     border-radius: 0.5rem;
 }
-
+.dp-closing,.btn{
+    padding: 0 0 0 0;
+}
 #accordion,.card{
     min-width: 100% !important;
     max-width: 30rem !important;
