@@ -10,7 +10,6 @@ body {
     display: flex;
     direction: initial;
     flex-wrap: wrap;
-    overflow-x: hidden;
     overflow-wrap: anywhere;
     width: 100%;
 }
