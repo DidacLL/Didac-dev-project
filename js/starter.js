@@ -6,20 +6,13 @@ window.onresize = function () {
         resizeBody()
     }, 100);
 }
-window.addEventListener("load", () => resizeBody());
+window.addEventListener("load", () => collapseManager());
 
-function resizeBody() {
-    let consolePanel = document.getElementById('dp-console');
+
+function collapseManager(){
+    resizeBody();
     let footer = document.getElementById('dp-footer');
     let skillsBar = document.getElementById('dp-skills-bar');
-    let num = calcREM(document.body.getBoundingClientRect().width / 2);
-    console.log(num)
-    if (num >= 30) {
-        consolePanel.style.width = "50%";
-    } else {
-        consolePanel.style.width = document.body.getBoundingClientRect().width + "px";
-    }
-
     if (skillsBar.getBoundingClientRect().bottom < footer.getBoundingClientRect().top) {
         console.log(skillsBar.getBoundingClientRect().bottom);
         console.log(footer.getBoundingClientRect().top);
@@ -27,13 +20,23 @@ function resizeBody() {
         $('#collapseOne').collapse('show');
         if (skillsBar.getBoundingClientRect().bottom < footer.getBoundingClientRect().top) {
             $('#collapseTwo').collapse('show');
-            $('#dp-paper-art-list').collapse('show');
-
+            $('#dp-paper-soft-list').collapse('show');
         }
-
+    }else if (skillsBar.getBoundingClientRect().top > footer.getBoundingClientRect().bottom){
+        $('#dp-paper-resume-list').collapse('hide');
+        
     }
+}
 
-
+function resizeBody() {
+    let consolePanel = document.getElementById('dp-console');
+    let num = calcREM(document.body.getBoundingClientRect().width / 2);
+    console.log(num)
+    if (num >= 30) {
+        consolePanel.style.width = "50%";
+    } else {
+        consolePanel.style.width = document.body.getBoundingClientRect().width + "px";
+    }
 }
 
 function calcREM(px) {
@@ -48,31 +51,76 @@ function convertRemToPixels(rem) {
 }
 
 
+function toggleMe(){
+    let me= document.getElementById("dp-me")
+    me.style.opacity=
+        me.style.opacity==='100'?'0':'100'
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 let closing1 = document.getElementById("dp-closing-1");
 let closing2 = document.getElementById("dp-closing-2");
 let closing3 = document.getElementById("dp-closing-3");
 
-
 $('#collapseOne').on('show.bs.collapse', function () {
     console.log("dslkausghkksdsdjkgghsdk")
     closing1.style.visibility = 'hidden';
-})
-$('#collapseOne').on('hidden.bs.collapse', function () {
+}).on('hidden.bs.collapse', function () {
     closing1.style.visibility = 'visible';
 })
 
 $('#collapseTwo').on('show.bs.collapse', function () {
     closing2.style.visibility = 'hidden';
-})
-$('#collapseTwo').on('hidden.bs.collapse', function () {
+}).on('hidden.bs.collapse', function () {
     closing2.style.visibility = 'visible';
 })
 
 $('#collapseThree').on('show.bs.collapse', function () {
     closing3.style.visibility = 'hidden';
-})
-$('#collapseThree').on('hidden.bs.collapse', function () {
+}).on('hidden.bs.collapse', function () {
     closing3.style.visibility = 'visible';
+})
+$('#dp-paper-art-list').on('show.bs.collapse', function () {
+    document.getElementById('dp-paper-art-title').innerHTML='<h4>'+
+        document.getElementById('dp-paper-art-title').innerHTML.replace('+','-') +'</h4>';
+}).on('hidden.bs.collapse', function () {
+    document.getElementById('dp-paper-art-title').innerHTML='<h4>'+
+    document.getElementById('dp-paper-art-title').innerText.replace('-','+')+'</h4>';
+
+})
+$('#dp-paper-resume-list').on('show.bs.collapse', function () {
+    document.getElementById('dp-paper-resume-title').innerHTML='<h4>'+
+        document.getElementById('dp-paper-resume-title').innerHTML.replace('+','-') +'</h4>';
+}).on('hidden.bs.collapse', function () {
+    document.getElementById('dp-paper-resume-title').innerHTML='<h4>'+
+    document.getElementById('dp-paper-resume-title').innerText.replace('-','+')+'</h4>';
+
+})
+$('#dp-paper-soft-list').on('show.bs.collapse', function () {
+    document.getElementById('dp-paper-soft-title').innerHTML='<h4>'+
+        document.getElementById('dp-paper-soft-title').innerHTML.replace('+','-') +'</h4>';
+}).on('hidden.bs.collapse', function () {
+    document.getElementById('dp-paper-soft-title').innerHTML='<h4>'+
+        document.getElementById('dp-paper-soft-title').innerText.replace('-','+')+'</h4>';
+
+})
+$('#dp-me').on('show.bs.collapse', function () {
+    document.getElementById('dp-me-area').innerHTML='-';
+}).on('hidden.bs.collapse', function () {
+    document.getElementById('dp-me-area').innerHTML='+';
+
 })
 
 

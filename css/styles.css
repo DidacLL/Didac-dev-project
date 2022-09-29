@@ -68,6 +68,9 @@ a, .dp-keyword {
     font-style: italic !important;
 }
 
+#dp-me-area:hover {
+    transform: scale(98%);
+}
 #dp-me, #dp-memin {
     position: fixed;
     bottom: 0;
@@ -76,6 +79,21 @@ a, .dp-keyword {
     min-width: 20%;
     right: 0;
 }
+
+#dp-me-area{
+    cursor: pointer;
+    position: fixed;
+    bottom:0;
+    right: 0;
+    width: max( 20%,30rem);
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    text-align: right;
+    font-weight: bolder;
+    font-size: 5rem;
+    color: darkgray;
+}
+
 
 #dp-footer {
     box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

@@ -197,8 +197,9 @@
                             data-toggle="collapse"
                             data-target="#dp-paper-resume-list"
                             aria-expanded="false"
-                            aria-controls="dp-paper-resume-list">
-                        <h4 class="dp-paper-section">Resume:</h4>
+                            aria-controls="dp-paper-resume-list"
+                            id="dp-paper-resume-title">
+                        <h4 class="dp-paper-section" >- Resume:</h4>
                     </button>
                     <ul class="collapse show dp-paper-list collapsed "
                         data-toggle="collapse"
@@ -221,17 +222,18 @@
                 <!--ART-->
                 <div id="dp-paper-art">
                     <button class="btn collapsed "
+                            id="dp-paper-art-title"
                             data-toggle="collapse"
                             data-target="#dp-paper-art-list"
                             aria-expanded="false"
                             aria-controls="dp-paper-list">
-                        <h4 class="dp-paper-section">Art Skills:</h4>
+                        <h4 class="dp-paper-section" >+ Art Skills:</h4>
                     </button>
                     <ul class="dp-paper-list collapse collapsed "
                         data-toggle="collapse"
                         data-target="#dp-paper-art-list"
                         aria-expanded="false"
-                        aria-controls="dp-paper-list"  id="dp-paper-art-list">
+                        aria-controls="dp-paper-list"  id="dp-paper-art-list" aria-labelledby="dp-paper-art-title">
                         <li>Post-expressionism: Charcoal, watercolor, ink & acrylic</li>
                         <li>Digital painting & Graphic Design: Adobe Photoshop, Illustrator, InDesign, Gimp</li>
                         <li>Animation: Love CutOut classic animation, also Adobe AfterEfects, Premier & Illustrator</li>
@@ -244,14 +246,17 @@
                             data-toggle="collapse"
                             data-target="#dp-paper-soft-list"
                             aria-expanded="false"
-                            aria-controls="dp-paper-soft-list">
-                        <h4 class="dp-paper-section">Soft Skills:</h4>
+                            aria-controls="dp-paper-soft-list"
+                            id="dp-paper-soft-title">
+                        <h4 class="dp-paper-section" >+ Soft Skills:</h4>
                     </button>
-                    <ul class="dp-paper-list collapse show collapsed "
+                    <ul class="dp-paper-list collapse collapsed "
                         data-toggle="collapse"
                         data-target="#dp-paper-soft-list"
                         aria-expanded="false"
-                        aria-controls="dp-paper-soft-list" id="dp-paper-soft-list">
+                        aria-controls="dp-paper-soft-list"
+                        id="dp-paper-soft-list"
+                        aria-labelledby="dp-paper-soft-title">
                         <li>Open to new challenges</li>
                         <li>Facility (and passion) to learn new environments.</li>
                         <li>Naturally creative and divergent mind.</li>
@@ -325,10 +330,17 @@
         <img id="dp-memin" src="images/memin.png" alt="Photo of Me" class="img-fluid collapsed"
              data-toggle="collapse"
              data-target="#dp-me"
-             aria-expanded="true"
+             aria-expanded="false"
              aria-controls="dp-me">
-        <img id="dp-me" src="images/me.png" alt="Photo of Me" class="img-fluid collapse show" onclick="this.style.opacity=
-        this.style.opacity==='100'?'0':'100'">
+        <img id="dp-me" src="images/me.png" alt="Photo of Me" class="img-fluid collapse show">
+        <div id="dp-me-area" class="img-fluid collapsed"
+
+             data-toggle="collapse"
+             data-target="#dp-me"
+             aria-expanded="false"
+             aria-controls="dp-me">
+            -
+        </div>
 
     </div>
 
