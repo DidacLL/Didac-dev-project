@@ -25,7 +25,7 @@ button {
 
 #dp-console {
 
-    /*border: deeppink solid 2px;*/
+    border: deeppink solid 2px;
     /*margin-bottom: 1%;*/
     padding: 2rem 2rem 2rem 1rem;
     background: black !important;
@@ -40,9 +40,10 @@ button {
 
     /*border: red solid 2px;*/
     overflow: hidden;
-    width: max(max(100% - 30rem, 30rem), max(100% - 60rem, 30rem));
+    overflow-wrap: break-word;
+    width: max(min(100%,60rem),30rem);
     padding: 2rem 2rem 2rem 1rem;
-    text-align: justify-all !important;
+    /*text-align: justify-all !important;*/
     background: white !important;
     color: black !important;
     min-width: 30rem !important;
@@ -54,7 +55,9 @@ button {
     width: auto;
     height: auto;
 }
-
+#dp-header,#accordion{
+    width: max(20rem, 100% - 30rem)
+}
 a, .dp-keyword {
     color: #9c31ff !important;
 }

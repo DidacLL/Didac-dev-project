@@ -1,4 +1,3 @@
-import {closing1, closing2, closing3} from "./listeners";
 
 let resizeTimer;
 window.onresize=function (){
@@ -6,16 +5,17 @@ window.onresize=function (){
     clearTimeout(resizeTimer);
     resizeTimer=setTimeout(function (){resizeBody()},100);
 }
-window.addEventListener("load",resizeBody);
+window.addEventListener("load",()=>resizeBody());
 
 function resizeBody() {
     let consolePanel= document.getElementById('dp-console'); 
     let num = calcREM(document.body.getBoundingClientRect().width/2);
     console.log(num)
-    if(num  > 30) {
-        consolePanel.style.width=convertRemToPixels(30)+"px";
+    if(num  >= 30) {
+        consolePanel.style.width="50%"
+            // convertRemToPixels(30)+"px";
     }else {
-        consolePanel.style.width=document.getElementById("dp-body").getBoundingClientRect().width+"px";
+        consolePanel.style.width=document.body.getBoundingClientRect().width+"px";
     }
 }
 

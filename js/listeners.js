@@ -1,6 +1,7 @@
-export const closing1 = document.getElementById("dp-closing-1");
-export const closing2 = document.getElementById("dp-closing-2");
-export const closing3 = document.getElementById("dp-closing-3");
+const closing1= document.getElementById("dp-closing-1");
+const closing2= document.getElementById("dp-closing-2");
+const closing3= document.getElementById("dp-closing-3");
+
 
 $('#collapseOne').on('show.bs.collapse', function () {
     closing1.style.visibility='hidden';
