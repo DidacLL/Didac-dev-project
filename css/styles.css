@@ -136,8 +136,10 @@ a, .dp-keyword {
     margin-left: 2%;
     min-width: 50%;
     max-width: 85%;
-    margin-bottom: 15%;
-    max-height: 10%;
+    margin-bottom: max(15%,7rem);
+
+    min-height: 7rem;
+    max-height: 15%;
     overflow: hidden;
     white-space: nowrap;
 }
