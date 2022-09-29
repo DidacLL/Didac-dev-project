@@ -2,7 +2,6 @@ body {
     min-height: 100%;
     max-width: 100%;
     display: inline-block;
-
 }
 
 #dp-body {
@@ -13,10 +12,7 @@ body {
     flex-wrap: wrap;
     overflow-x: hidden;
     overflow-wrap: anywhere;
-    /*overflow-block: auto;*/
     width: 100%;
-
-    /*border: red solid 2px;*/
 }
 
 button {
@@ -24,26 +20,19 @@ button {
 }
 
 #dp-console {
-
-    /*border: deeppink solid 2px;*/
-    /*margin-bottom: 1%;*/
-    padding: 2rem 2rem 2rem 1rem;
+    padding: 2rem 2rem 1rem 2rem;
     background: black !important;
     color: white !important;
     min-width: 30rem !important;
     max-width: 100% !important;
     border-bottom-right-radius: 2rem;
-
 }
 
 #dp-paper {
-
-    /*border: red solid 2px;*/
     overflow: hidden;
     overflow-wrap: break-word;
     width: max(min(100%,60rem),30rem);
-    padding: 2rem 2rem 2rem 1rem;
-    /*text-align: justify-all !important;*/
+    padding: 2rem 3rem 2rem 2rem;
     background: white !important;
     color: black !important;
     min-width: 30rem !important;
@@ -67,7 +56,6 @@ a, .dp-keyword {
     min-height: 30%;
     width: auto;
     height: 50%;
-    /*margin-bottom: 100%;*/
 }
 
 .dp-code-orange {
@@ -107,7 +95,6 @@ a, .dp-keyword {
 }
 
 #dp-contact {
-
     padding-left: 2rem;
     padding-top: 1rem;
     width: fit-content;
@@ -116,15 +103,12 @@ a, .dp-keyword {
 }
 #dp-contact>span>a>img{
     height: 50%;
-    /*padding-left: 5%;*/
 }
 #dp-contact>span>a>img:hover{
     transform: rotate(30deg);
-    /*padding-left: 5%;*/
 }
 #dp-contact>span>a>img:active{
     transform: rotate(150deg);
-    /*padding-left: 5%;*/
 }
 #dp-contact>span{
     padding-left: 2rem;
