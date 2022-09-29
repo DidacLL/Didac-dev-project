@@ -94,7 +94,8 @@ a, .dp-keyword {
     box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     position: fixed;
-    height: 15%;
+    min-height: 15%;
+    max-height: 20%;
     bottom: 0;
     width: 100%;
     background: white !important;
@@ -125,8 +126,8 @@ a, .dp-keyword {
 #dp-skills-bar {
     margin-left: 2%;
     min-width: 50%;
-    max-width: 88%;
-    padding: 0rem 2rem 3rem 5rem;
+    max-width: 85%;
+    /*padding: 0rem 2rem 3rem 0;*/
     margin-bottom: 15%;
     /*marquee-speed: fast !important;*/
     /*marquee-loop: infinite !important;*/
