@@ -44,9 +44,6 @@ button {
     width: auto;
     height: auto;
 }
-#dp-header,#accordion{
-    width: max(20rem, 100% - 30rem)
-}
 a, .dp-keyword {
     color: #9c31ff !important;
 }
