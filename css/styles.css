@@ -97,7 +97,7 @@ a, .dp-keyword {
     border-radius: 0.5rem;
     display: inline-block;
 
-    border: red solid 1px;
+    /*border: red solid 1px;*/
 
 }
 #dp-contact>span>a>img{
