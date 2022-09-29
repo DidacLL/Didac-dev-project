@@ -87,8 +87,8 @@ a, .dp-keyword {
     position: fixed;
     min-height: 7rem;
     max-height: 15%;
-    bottom: 0;
     width: 100%;
+    bottom: -10px;
     background: white !important;
     color: black !important;
     fill: white;
@@ -97,12 +97,14 @@ a, .dp-keyword {
 #dp-contact {
     padding-left: 2rem;
     padding-top: 1rem;
-    width: fit-content;
+    width: calc(100% - 20rem);
     border-radius: 0.5rem;
     alignment: center;
+    overflow: visible;
 }
 #dp-contact>span>a>img{
-    height: 50%;
+    max-height:50% ;
+    max-width:33%
 }
 #dp-contact>span>a>img:hover{
     transform: rotate(30deg);
