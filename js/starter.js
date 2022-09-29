@@ -23,7 +23,7 @@ function calcREM(px)
 {
     if( !isNaN(px) )
     {
-        var remInPx = parseFloat($("html").css("font-size"));
+        let remInPx = parseFloat($("html").css("font-size"));
         return (parseFloat(px) / remInPx);
     }
 }
