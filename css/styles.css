@@ -96,15 +96,10 @@ a, .dp-keyword {
     width: max(calc(100% - 20rem),15rem);
     border-radius: 0.5rem;
     display: inline-block;
-
-    /*border: red solid 1px;*/
-
 }
 #dp-contact>span>a>img{
     max-height:50% ;
     min-height: 10%;
-    /*width: auto;*/
-    /*max-width:33%;*/
 }
 #dp-contact>span>a>img:hover{
     animation: rotate 3s linear infinite;
