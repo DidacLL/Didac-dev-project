@@ -94,8 +94,8 @@ a, .dp-keyword {
     box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     position: fixed;
-    min-height: 15%;
-    max-height: 20%;
+    min-height: 7rem;
+    max-height: 15%;
     bottom: 0;
     width: 100%;
     background: white !important;
