@@ -24,7 +24,7 @@
 
 <div id="dp-body">
     <div id="dp-console" class="dp-console-main">
-
+        <!--TITLE-->
         <button class="btn collapsed text-white"
                 id="public-class"
                 data-toggle="collapse"
@@ -36,29 +36,37 @@
         </button>
         <div id="dp-console-main" class="collapse show">
             <div id="dp-header">
-
+                <!--RESUME-->
                 <button class="btn collapsed text-white"
                         id="dp-main-resume-btn"
                         data-toggle="collapse"
                         data-target="#dp-resume"
                         aria-expanded="true"
                         aria-controls="dp-resume">
-                     <h5  class="dp-console-title" style="color: #53c87b "> Software engineer and creative developer.</h5>
+                    <h5 class="dp-console-title" style="color: #53c87b "> Software engineer and creative developer.</h5>
                 </button>
-                <div id="dp-resume" class="collapse show" aria-labelledby="dp-main-resume-btn">
+                <div id="dp-resume" class="collapse show collapsed "
+                     data-toggle="collapse"
+                     data-target="#dp-resume"
+                     aria-expanded="true"
+                     aria-controls="dp-resume"
+                     aria-labelledby="dp-main-resume-btn">
                     <ul id="dp-resume-list">
                         <li id="dp-resume-list-main">BackEnd Java Developer licensed by
-                            <a href="https://www.ironhack.com/es/barcelona">IronHack Barcelona</a><span class="dp-code-orange">,</span></li>
-                        <li>Currently studying Software Engineering Degree at <a href="https://www.uoc.edu" >
+                            <a href="https://www.ironhack.com/es/barcelona">IronHack Barcelona</a><span
+                                    class="dp-code-orange">,</span></li>
+                        <li>Currently studying Software Engineering Degree at <a href="https://www.uoc.edu">
                             UOC University (Barcelona)</a><span class="dp-code-orange">,</span></li>
-                        <li>ReSkilled professional, love to keep always learning, out of the comfort zone<span class="dp-code-orange">,</span></li>
-                        <li>Open to new opportunities to point my career plan to the right direction!<span class="dp-code-orange"> ;</span></li>
+                        <li>ReSkilled professional, love to keep always learning, out of the comfort zone<span
+                                class="dp-code-orange">,</span></li>
+                        <li>Open to new opportunities to point my career plan to the right direction!<span
+                                class="dp-code-orange"> ;</span></li>
                     </ul>
                 </div>
             </div>
+
+            <!--EDUCATION-->
             <div id="accordion" class="accordion accordion-flush text-white">
-
-
                 <div class="card flex-column w-100">
                     <div class="card-header w-100" id="headingOne">
                         <button class="btn collapsed text-white"
@@ -67,21 +75,29 @@
                                 aria-expanded="false"
                                 aria-controls="collapseOne">
                             <h5 class="mb-0 dp-console-title">
-
-                                <span class="dp-code-orange">Education </span><span class="dp-code-title"> education</span>[ ]{
-                                <span id="dp-closing-1" >... }<span class="dp-code-orange"> ;</span></span></h5>
+                                <span class="dp-code-orange">Education </span><span
+                                    class="dp-code-title"> education</span>[ ]{
+                                <span id="dp-closing-1">... }<span class="dp-code-orange"> ;</span></span></h5>
                             </h5>
                         </button>
                     </div>
 
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
                         <div class="card-body">
-                            <div id="dp-education">
+                            <div id="dp-education" class="collapsed text-white"
+                                 data-toggle="collapse"
+                                 data-target="#collapseOne"
+                                 aria-expanded="false"
+                                 aria-controls="collapseOne">
                                 <ul class="dp-console-list">
-                                    <li><span class="dp-tag"> Current:</span> UOC Software Engineering Degree<span class="dp-code-orange"> ,</span></li>
-                                    <li><span class="dp-tag">2022 IronHack Barcelona:</span> Java BackEnd Bootcamp<span class="dp-code-orange"> ,</span></li>
-                                    <li><span class="dp-tag">2021 UOC:</span> Taller de Java Para Iniciados en programación<span class="dp-code-orange"> ,</span></li>
-                                    <li><span class="dp-tag">2016 escola Massana:</span> Tecnico Superior en Artes Plasticas, Diseño e Ilustración
+                                    <li><span class="dp-tag"> Current:</span> UOC Software Engineering Degree<span
+                                            class="dp-code-orange"> ,</span></li>
+                                    <li><span class="dp-tag">2022 IronHack Barcelona:</span> Java BackEnd Bootcamp<span
+                                            class="dp-code-orange"> ,</span></li>
+                                    <li><span class="dp-tag">2021 UOC:</span> Taller de Java Para Iniciados en
+                                        programación<span class="dp-code-orange"> ,</span></li>
+                                    <li><span class="dp-tag">2016 escola Massana:</span> Tecnico Superior en Artes
+                                        Plasticas, Diseño e Ilustración
                                     </li>
                                 </ul>
                             </div>
@@ -89,6 +105,7 @@
                         </div>
                     </div>
                 </div>
+                <!--SKILLS-->
                 <div class="card">
                     <div class="card-header w-100" id="headingTwo">
                         <button class="btn collapsed text-white"
@@ -103,17 +120,25 @@
                             </h5>
                         </button>
                     </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                    <div id="collapseTwo" class="collapse collapsed"
+                         data-toggle="collapse"
+                         data-target="#collapseTwo"
+                         aria-expanded="false"
+                         aria-controls="collapseTwo"
+                         aria-labelledby="headingTwo">
                         <div class="card-body w-100">
                             <div id="dp-skills">
                                 <ul class="dp-console-list">
-                                    <li><span class="dp-keyword"> Java 18</span> Advanced level: Spring, REST api, WebFlux MicroServices, maven, security
+                                    <li><span class="dp-keyword"> Java 18</span> Advanced level: Spring, REST api,
+                                        WebFlux MicroServices, maven, security
                                         (OAuth2, keycloak),libGDX...<span class="dp-code-orange"> ,</span>
                                     </li>
-                                    <li class="dp-keyword">JavaScript, CSS, Html5<span class="dp-code-orange"> ,</span></li>
+                                    <li class="dp-keyword">JavaScript, CSS, Html5<span class="dp-code-orange"> ,</span>
+                                    </li>
                                     <li class="dp-keyword">C language<span class="dp-code-orange"> ,</span></li>
                                     <li class="dp-keyword">MySQL<span class="dp-code-orange"> ,</span></li>
-                                    <li class="dp-keyword">Postman, IntelliJ, Eclipse, Workbench<span class="dp-code-orange"> ,</span></li>
+                                    <li class="dp-keyword">Postman, IntelliJ, Eclipse, Workbench<span
+                                            class="dp-code-orange"> ,</span></li>
                                     <li>Agile workflow, <span class="dp-keyword">UML</span></li>
                                 </ul>
                                 <h5 class="dp-console">}<span class="dp-code-orange"> ;</span></h5>
@@ -121,28 +146,32 @@
                         </div>
                     </div>
                 </div>
-
+                <!--PREVIOUS-->
                 <h6 class="dp-tag">@Deprecated</h6>
                 <div class="card">
                     <div class="card-header" id="headingThree">
                         <button class="btn collapsed text-white" data-toggle="collapse" data-target="#collapseThree"
                                 aria-expanded="false" aria-controls="collapseThree">
 
-                            <h5 class="mb-0 "><span class="dp-code-orange">Work</span><span class="dp-code-title"> previousExperience</span>[ ]{
+                            <h5 class="mb-0 "><span class="dp-code-orange">Work</span><span class="dp-code-title"> previousExperience</span>[
+                                ]{
 
-                            <span id="dp-closing-3">... }<span class="dp-code-orange"> ;</span></span></h5>
+                                <span id="dp-closing-3">... }<span class="dp-code-orange"> ;</span></span></h5>
                         </button>
 
 
                     </div>
 
 
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                    <div id="collapseThree" class="collapse collapsed text-white" data-toggle="collapse"
+                         data-target="#collapseThree"
+                         aria-expanded="false" aria-controls="collapseThree" aria-labelledby="headingThree">
                         <div class="card-body">
 
                             <div id="dp-previous">
                                 <ul class="dp-console-list">
-                                    <li style="color: cadetblue">+10 years of experience working on customer service and helpdesk for Spain's
+                                    <li style="color: cadetblue">+10 years of experience working on customer service and
+                                        helpdesk for Spain's
                                         most important companies (Caixabank, Movistar or Vodafone)
                                     </li>
 
@@ -158,6 +187,8 @@
         <p class="dp-console">
         <h1>}</h1></p>
     </div>
+
+    <!--                                                     PAPER                                                       -->
     <div id="dp-paper" class="text-monospace">
         <button class="btn collapsed "
                 id="hello-world"
@@ -165,9 +196,9 @@
                 data-target="#dp-paper-main"
                 aria-expanded="true"
                 aria-controls="dp-paper-main">
-            <p>
-            <h2 id="dp-paper-title"> $HELLO WORLD_ </h2></p>
+            <h2 id="dp-paper-title"> $HELLO WORLD_ </h2>
         </button>
+        <!--RESUME-->
         <div id="dp-paper-main" class="collapse show">
             <p id="dp-paper-subtitle">Barcelona, 2022</p>
             <div id="dp-paper-resume">
@@ -192,6 +223,7 @@
                     </li>
                 </ul>
             </div>
+            <!--ART-->
             <div id="dp-paper-art">
                 <button class="btn collapsed "
                         data-toggle="collapse"
@@ -207,6 +239,7 @@
                     <li>Draw, sketch & concept art</li>
                 </ul>
             </div>
+            <!--SKILLS-->
             <div id="dp-paper-soft">
                 <button class="btn collapsed "
                         data-toggle="collapse"
@@ -228,22 +261,52 @@
         </div>
 
     </div>
+    <div id="dp-skills-bar" class="marquee">
+        <ul class="marquee__content" style="list-style-type:none;">
+            <li><img src="images/icon-html.png"></li>
+            <li><img src="images/icon-css.png"></li>
+            <li><img src="images/icon-js.png"></li>
+            <li><img src="images/icon-mysql.png"></li>
+            <li><img src="images/icon-posgresql.png"></li>
+            <li><img src="images/icon-c.png"></li>
+            <li><img src="images/icon-java.png"></li>
+            <li><img src="images/icon-lombok.png"></li>
+            <li><img src="images/icon-spring.png"></li>
+            <li><img src="images/icon-junit.png"></li>
+            <li><img src="images/icon-eureka.png"></li>
+            <li><img src="images/icon-kafka.png"></li>
+            <li><img src="images/icon-keycloak.png"></li>
+            <li><img src="images/icon-docker.png"></li>
+            <li><img src="images/icon-kubernetes.png"></li>
+            <li><img src="images/icon-postman.png"></li>
+            <li><img src="images/icon-godot.png"></li>
+            <li><img src="images/icon-libgdx.png"></li>
+            <li><img src="images/icon-git.png"></li>
+        </ul>
+        <ul style="list-style-type:none;" aria-hidden="true" class="marquee__content">
+            <li><img src="images/icon-html.png"></li>
+            <li><img src="images/icon-css.png"></li>
+            <li><img src="images/icon-js.png"></li>
+            <li><img src="images/icon-mysql.png"></li>
+            <li><img src="images/icon-posgresql.png"></li>
+            <li><img src="images/icon-c.png"></li>
+            <li><img src="images/icon-java.png"></li>
+            <li><img src="images/icon-lombok.png"></li>
+            <li><img src="images/icon-spring.png"></li>
+            <li><img src="images/icon-junit.png"></li>
+            <li><img src="images/icon-eureka.png"></li>
+            <li><img src="images/icon-kafka.png"></li>
+            <li><img src="images/icon-keycloak.png"></li>
+            <li><img src="images/icon-docker.png"></li>
+            <li><img src="images/icon-kubernetes.png"></li>
+            <li><img src="images/icon-postman.png"></li>
+            <li><img src="images/icon-godot.png"></li>
+            <li><img src="images/icon-libgdx.png"></li>
+            <li><img src="images/icon-git.png"></li>
+        </ul>
+    </div>
 
 </div>
-<div id="dp-skills-bar">
-    <img src="images/icon-java.png">
-    <img src="images/icon-lombok.png">
-    <img src="images/icon-mysql.png">
-    <img src="images/icon-spring.png">
-
-    <img src="images/icon-java.png">
-    <img src="images/icon-lombok.png">
-    <img src="images/icon-mysql.png">
-    <img src="images/icon-spring.png">
-    <img src="images/icon-java.png">
-    <img src="images/icon-lombok.png">
-    <img src="images/icon-mysql.png">
-    <img src="images/icon-spring.png">
 </div>
 <div id="dp-footer" class="text-monospace">
     <div id="dp-contact">
@@ -258,12 +321,12 @@
 
 </div>
 
-<div id="dp-photo" >
-    <img  id="dp-memin" src="images/memin.png" alt="Photo of Me" class="img-fluid collapsed"
-          data-toggle="collapse"
-          data-target="#dp-me"
-          aria-expanded="true"
-          aria-controls="dp-me">
+<div id="dp-photo">
+    <img id="dp-memin" src="images/memin.png" alt="Photo of Me" class="img-fluid collapsed"
+         data-toggle="collapse"
+         data-target="#dp-me"
+         aria-expanded="true"
+         aria-controls="dp-me">
     <img id="dp-me" src="images/me.png" alt="Photo of Me" class="img-fluid collapse show" onclick="this.style.opacity=
     this.style.opacity==='100'?'0':'100'">
 
