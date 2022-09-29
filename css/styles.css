@@ -25,7 +25,7 @@ button {
 
 #dp-console {
 
-    border: deeppink solid 2px;
+    /*border: deeppink solid 2px;*/
     /*margin-bottom: 1%;*/
     padding: 2rem 2rem 2rem 1rem;
     background: black !important;
@@ -150,11 +150,7 @@ a, .dp-keyword {
     margin-left: 2%;
     min-width: 50%;
     max-width: 85%;
-    /*padding: 0rem 2rem 3rem 0;*/
     margin-bottom: 15%;
-    /*marquee-speed: fast !important;*/
-    /*marquee-loop: infinite !important;*/
-    /*marquee-style: scroll;*/
     max-height: 10%;
     overflow: hidden;
     white-space: nowrap;
