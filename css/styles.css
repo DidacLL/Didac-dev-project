@@ -13,7 +13,6 @@ body {
     overflow-wrap: anywhere;
     width: 100%;
 }
-
 button {
     display: flex;
 }
@@ -119,8 +118,13 @@ a, .dp-keyword {
     max-height:50% ;
     min-height: 10%;
 }
-#dp-contact>span>a>img:hover{
-    animation: rotate 3s linear infinite;
+@media (hover: hover) {
+    #dp-contact > span > a > img:hover {
+        animation: rotate 3s alternate 2;
+    }
+}
+#dp-contact > span > a:active {
+    transform: scale(95%);
 }
 #dp-contact>span{
     padding-left: 2rem;
@@ -188,7 +192,7 @@ a, .dp-keyword {
         transform: rotate(0);
     }
     to{
-        transform: rotate(360deg);
+        transform: rotate(45deg);
     }
     
 }

@@ -37,6 +37,9 @@ function resizeBody() {
     } else {
         consolePanel.style.width = document.body.getBoundingClientRect().width + "px";
     }
+    let area= document.getElementById('dp-me-area');
+    area.style.width=document.getElementById('dp-me').getBoundingClientRect().width+'px';
+    area.style.height=document.getElementById('dp-footer').getBoundingClientRect().height + 'px';
 }
 
 function calcREM(px) {
