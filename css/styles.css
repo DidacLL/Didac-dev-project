@@ -43,7 +43,8 @@ button {
     height: auto;
 }
 a, .dp-keyword {
-    color: #9c31ff !important;
+    color: rgba(192, 172, 243, 0.96) !important;
+    font-weight: bold;
 }
 
 #dp-photo {
