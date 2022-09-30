@@ -40,6 +40,7 @@ function resizeBody() {
     let area= document.getElementById('dp-me-area');
     area.style.width=document.getElementById('dp-me').getBoundingClientRect().width+'px';
     area.style.height=document.getElementById('dp-footer').getBoundingClientRect().height + 'px';
+    area.getBoundingClientRect().y=document.getElementById('dp-footer').getBoundingClientRect().y;
 }
 
 function calcREM(px) {
