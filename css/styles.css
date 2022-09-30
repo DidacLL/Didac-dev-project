@@ -55,16 +55,16 @@ a, .dp-keyword {
 }
 
 .dp-code-orange {
-    color: darkorange !important;
+    color: #d58a30 !important;
     font-weight: bold !important;
 }
 
 .dp-code-title {
-    color: #ffd23e !important;
+    color: #ffe798 !important;
 }
 
 .dp-tag {
-    color: lawngreen !important;
+    color: #53c87b !important;
     font-style: italic !important;
 }
 
